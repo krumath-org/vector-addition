@@ -1,0 +1,1250 @@
+{
+  "meta": {
+    "project": "vector-addition",
+    "fork": "https://github.com/krumath-org/vector-addition",
+    "source_en_files": [
+      "vector-addition/vector-addition-strings_en.json",
+      "joist/joist-strings_en.json",
+      "scenery-phet/scenery-phet-strings_en.json"
+    ],
+    "locale_target": "km",
+    "generated": "2026-10-04",
+    "how_to_fill": [
+      "Fill empty \"khmer\" fields. Do not rename keys or change \"english\".",
+      "Keep placeholders {{likeThis}}, {0}, and Fluent forms like { $symbol } / { $equationType -> ... } unchanged inside Khmer text.",
+      "Keep degree symbol ° in signedRange / unsignedRange.",
+      "PRIORITY 1 — sim_visible_ui: title, Explore 1D / Explore 2D / Lab / Equations screens, Sum/Values/Components, accordion titles, Preferences Angle Convention, keyboard-help labels (all EMPTY — please translate).",
+      "PRIORITY 1b — sim_a11y: screen-reader strings for all screens (including Angles/Grid accessible names, scene names Horizontal/Vertical/Cartesian/Polar, equation radios, etc.). Optional for first pass if you only want on-screen text; fill when ready. All EMPTY.",
+      "PRIORITY 2 — shared_joist_chrome / shared_scenery_phet_chrome: PhET menu, About/Credits, Preferences tabs, Reset All (prefilled from vector-addition-equations — review/adjust).",
+      "Screens: Explore 1D, Explore 2D, Lab, Equations (equation practice). Home/nav chrome uses joist strings.",
+      "Icon-only controls (Angles, Grid, Base Vectors checkbox, Components style icons) show English mainly via a11y names in sim_a11y.",
+      "symbol.x / symbol.y are usually kept as x / y.",
+      "Backend/dev-only strings omitted (credits person names stay as proper names).",
+      "Send this file back when ready; we will apply into babel as vector-addition-strings_km.json (+ joist/scenery-phet as needed)."
+    ],
+    "counts": {
+      "sim_visible_ui": 25,
+      "sim_a11y": 101,
+      "shared_joist_chrome": 60,
+      "shared_scenery_phet_chrome": 15,
+      "total": 201,
+      "empty_khmer_needing_translation": 0,
+      "empty_priority1_sim_visible_ui": 0,
+      "empty_priority1b_sim_a11y": 0
+    }
+  },
+  "sim_visible_ui": {
+    "vector-addition.title": {
+      "english": "Vector Addition",
+      "khmer": "ផលបូកវ៉ិចទ័រ",
+      "category": "title",
+      "notes": "Sim title on home screen / browser tab."
+    },
+    "screen.equations": {
+      "english": "Equations",
+      "khmer": "សមីការ",
+      "category": "screen_name",
+      "notes": "Home screen card + navbar for Equations (equation practice / manipulation)."
+    },
+    "screen.explore1D": {
+      "english": "Explore 1D",
+      "khmer": "រុករក 1D",
+      "category": "screen_name",
+      "notes": "Home screen card + navbar for Explore 1D."
+    },
+    "screen.explore2D": {
+      "english": "Explore 2D",
+      "khmer": "រុករក 2D",
+      "category": "screen_name",
+      "notes": "Home screen card + navbar for Explore 2D."
+    },
+    "screen.lab": {
+      "english": "Lab",
+      "khmer": "បន្ទប់ពិសោធន៍",
+      "category": "screen_name",
+      "notes": "Home screen card + navbar for Lab."
+    },
+    "sum": {
+      "english": "Sum",
+      "khmer": "ផលបូក",
+      "category": "checkbox_control",
+      "notes": "Sum checkbox label on control panel (Explore/Lab screens)."
+    },
+    "values": {
+      "english": "Values",
+      "khmer": "តម្លៃ",
+      "category": "checkbox_control",
+      "notes": "Values checkbox label on control panel."
+    },
+    "components": {
+      "english": "Components",
+      "khmer": "កំប៉ូសង់",
+      "category": "label",
+      "notes": "Components control label on control panel."
+    },
+    "noVectorSelected": {
+      "english": "No vector selected",
+      "khmer": "មិនបានជ្រើសរើសវ៉ិចទ័រទេ",
+      "category": "status_message",
+      "notes": "Shown in Vector Values accordion when nothing selected."
+    },
+    "vectorValues": {
+      "english": "Vector Values",
+      "khmer": "តម្លៃវ៉ិចទ័រ",
+      "category": "accordion_box",
+      "notes": "Vector Values accordion box title."
+    },
+    "symbol.x": {
+      "english": "x",
+      "khmer": "x",
+      "category": "axis_symbol",
+      "notes": "X axis / component symbol. Often keep as x."
+    },
+    "symbol.y": {
+      "english": "y",
+      "khmer": "y",
+      "category": "axis_symbol",
+      "notes": "Y axis / component symbol. Often keep as y."
+    },
+    "baseVectors": {
+      "english": "Base Vectors",
+      "khmer": "វ៉ិចទ័រគោល",
+      "category": "accordion_box",
+      "notes": "Base Vectors accordion box title (Equations screen)."
+    },
+    "equation": {
+      "english": "Equation",
+      "khmer": "សមីការ",
+      "category": "accordion_box",
+      "notes": "Equation accordion box title (Equations screen)."
+    },
+    "angleConvention": {
+      "english": "Angle Convention",
+      "khmer": "ទម្រង់កំណត់មុំ",
+      "category": "preferences",
+      "notes": "Preferences → Simulation: Angle Convention control label."
+    },
+    "angleConventionDescription": {
+      "english": "The convention used to display angle values.",
+      "khmer": "ទម្រង់ដែលត្រូវបានប្រើដើម្បីបង្ហាញតម្លៃមុំ។",
+      "category": "preferences",
+      "notes": "Preferences → Simulation: description under Angle Convention."
+    },
+    "signedRange": {
+      "english": "signed: -180° to 180°",
+      "khmer": "មានសញ្ញា៖ -180° ដល់ 180°",
+      "category": "preferences",
+      "notes": "Preferences radio: signed angle range. Keep degree symbol °."
+    },
+    "unsignedRange": {
+      "english": "unsigned: 0° to 360°",
+      "khmer": "គ្មានសញ្ញា៖ 0° ដល់ 360°",
+      "category": "preferences",
+      "notes": "Preferences radio: unsigned angle range. Keep degree symbol °."
+    },
+    "keyboardHelpDialog.graphAreaOrigin": {
+      "english": "Graph Area Origin",
+      "khmer": "គល់នៃផ្ទៃក្រាប",
+      "category": "keyboard_help",
+      "notes": "Keyboard Shortcuts dialog section title."
+    },
+    "keyboardHelpDialog.vectors": {
+      "english": "Vectors",
+      "khmer": "វ៉ិចទ័រ",
+      "category": "keyboard_help",
+      "notes": "Keyboard Shortcuts dialog section title."
+    },
+    "keyboardHelpDialog.removeFromGraphArea": {
+      "english": "Remove from graph area",
+      "khmer": "ដកចេញពីផ្ទៃក្រាប",
+      "category": "keyboard_help",
+      "notes": "Keyboard shortcut description."
+    },
+    "keyboardHelpDialog.selectOrDeselect": {
+      "english": "Select or deselect",
+      "khmer": "ជ្រើសរើស ឬ មិនជ្រើសរើស",
+      "category": "keyboard_help",
+      "notes": "Keyboard shortcut description."
+    },
+    "keyboardHelpDialog.moveVector": {
+      "english": "Move",
+      "khmer": "រំកិល",
+      "category": "keyboard_help",
+      "notes": "Keyboard shortcut description (Move vector)."
+    },
+    "keyboardHelpDialog.scaleRotateVector": {
+      "english": "Scale and rotate via tip",
+      "khmer": "ពង្រីក/បង្រួម និងបង្វិលតាមចុងវ៉ិចទ័រ",
+      "category": "keyboard_help",
+      "notes": "Keyboard shortcut description."
+    },
+    "keyboardHelpDialog.checkVectorValues": {
+      "english": "Check vector values",
+      "khmer": "ពិនិត្យមើលតម្លៃវ៉ិចទ័រ",
+      "category": "keyboard_help",
+      "notes": "Keyboard shortcut description."
+    }
+  },
+  "sim_a11y": {
+    "a11y.explore1DScreen.screenButtonsHelpText": {
+      "english": "Explore vector addition in one dimension.",
+      "khmer": "រុករកផលបូកវ៉ិចទ័រក្នុងលំហមួយវិមាត្រ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.explore1DScreen.screenSummary.playArea": {
+      "english": "There is an open graph area where you can add vectors and modify their position, magnitude, and direction, as well as explore the vectors’ sum.",
+      "khmer": "មានផ្ទៃក្រាបបើកចំហមួយដែលអ្នកអាចបន្ថែមវ៉ិចទ័រ និងកែប្រែទីតាំង ម៉ូឌុល និងទិសដៅរបស់វា ព្រមទាំងរុករកផលបូកនៃវ៉ិចទ័រផងដែរ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.explore1DScreen.screenSummary.controlArea": {
+      "english": "Turn on vector sum, values, and grid. Modify position of graph area origin. Switch between horizontal and vertical scenes, or reset the screen.",
+      "khmer": "បើកផលបូកវ៉ិចទ័រ តម្លៃ និងក្រឡាចត្រង្គ។ កែប្រែទីតាំងគល់នៃផ្ទៃក្រាប។ ប្តូររវាងផ្ទាំងផ្ដេក និងផ្ទាំងបញ្ឈរ ឬកំណត់អេក្រង់ឡើងវិញ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.explore1DScreen.screenSummary.currentDetails": {
+      "english": "Currently, { $numberOfVectors } vectors in graph area. { $sceneName } scene selected.",
+      "khmer": "បច្ចុប្បន្ន មានវ៉ិចទ័រចំនួន { $numberOfVectors } នៅក្នុងផ្ទៃក្រាប។ ផ្ទាំង { $sceneName } ត្រូវបានជ្រើសរើស។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.explore1DScreen.screenSummary.interactionHint": {
+      "english": "Add vectors to graph area to begin exploring.",
+      "khmer": "បន្ថែមវ៉ិចទ័រទៅក្នុងផ្ទៃក្រាបដើម្បីចាប់ផ្តើមរុករក។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.explore2DScreen.screenButtonsHelpText": {
+      "english": "Explore vector addition in two dimensions.",
+      "khmer": "រុករកផលបូកវ៉ិចទ័រក្នុងលំហពីរវិមាត្រ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.explore2DScreen.screenSummary.playArea": {
+      "english": "There is an open graph area where you can add vectors and modify their position, magnitude, and direction, as well as explore the vectors’ sum.",
+      "khmer": "មានផ្ទៃក្រាបបើកចំហមួយដែលអ្នកអាចបន្ថែមវ៉ិចទ័រ និងកែប្រែទីតាំង ម៉ូឌុល និងទិសដៅរបស់វា ព្រមទាំងរុករកផលបូកនៃវ៉ិចទ័រផងដែរ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.explore2DScreen.screenSummary.controlArea": {
+      "english": "Turn on vector sum, values, angles, and grid. Display vector components. Modify position of graph area origin. Switch between Cartesian and polar scenes, or reset screen.",
+      "khmer": "បើកផលបូកវ៉ិចទ័រ តម្លៃ មុំ និងក្រឡាចត្រង្គ។ បង្ហាញកំប៉ូសង់វ៉ិចទ័រ។ កែប្រែទីតាំងគល់នៃផ្ទៃក្រាប។ ប្តូររវាងផ្ទាំងដេកាត និងផ្ទាំងប៉ូលែ ឬកំណត់អេក្រង់ឡើងវិញ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.explore2DScreen.screenSummary.currentDetails": {
+      "english": "Currently, { $numberOfVectors } vectors in graph area. { $sceneName } scene selected.",
+      "khmer": "បច្ចុប្បន្ន មានវ៉ិចទ័រចំនួន { $numberOfVectors } នៅក្នុងផ្ទៃក្រាប។ ផ្ទាំង { $sceneName } ត្រូវបានជ្រើសរើស។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.explore2DScreen.screenSummary.interactionHint": {
+      "english": "Add vectors to graph area to begin exploring.",
+      "khmer": "បន្ថែមវ៉ិចទ័រទៅក្នុងផ្ទៃក្រាបដើម្បីចាប់ផ្តើមរុករក។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.labScreen.screenButtonsHelpText": {
+      "english": "Experiment with two independent sets of vectors.",
+      "khmer": "ពិសោធន៍ជាមួយសំណុំវ៉ិចទ័រឯករាជ្យពីរផ្សេងគ្នា។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.labScreen.screenSummary.playArea": {
+      "english": "There is an open graph area where you can add vectors from two sets and modify their position, magnitude, and direction. You can also explore and compare vector sums for each set.",
+      "khmer": "មានផ្ទៃក្រាបបើកចំហមួយដែលអ្នកអាចបន្ថែមវ៉ិចទ័រពីសំណុំទាំងពីរ និងកែប្រែទីតាំង ម៉ូឌុល និងទិសដៅរបស់វា។ អ្នកក៏អាចរុករក និងប្រៀបធៀបផលបូកវ៉ិចទ័រសម្រាប់សំណុំនីមួយៗផងដែរ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.labScreen.screenSummary.controlArea": {
+      "english": "Turn on vector sums, values, angles, and grid. Display vector components. Modify position of graph area origin. Switch between Cartesian and polar scenes, or reset screen.",
+      "khmer": "បើកផលបូកវ៉ិចទ័រ តម្លៃ មុំ និងក្រឡាចត្រង្គ។ បង្ហាញកំប៉ូសង់វ៉ិចទ័រ។ កែប្រែទីតាំងគល់នៃផ្ទៃក្រាប។ ប្តូររវាងផ្ទាំងដេកាត និងផ្ទាំងប៉ូលែ ឬកំណត់អេក្រង់ឡើងវិញ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.labScreen.screenSummary.currentDetails": {
+      "english": "Currently, { $vectorSet1Size } vectors from set { $vectorSet1Symbol } and { $vectorSet2Size } vectors from set { $vectorSet2Symbol } in graph area. { $sceneName } scene selected.",
+      "khmer": "បច្ចុប្បន្ន មានវ៉ិចទ័រចំនួន { $vectorSet1Size } ពីសំណុំ { $vectorSet1Symbol } និងវ៉ិចទ័រចំនួន { $vectorSet2Size } ពីសំណុំ { $vectorSet2Symbol } នៅក្នុងផ្ទៃក្រាប។ ផ្ទាំង { $sceneName } ត្រូវបានជ្រើសរើស។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.labScreen.screenSummary.interactionHint": {
+      "english": "Add vectors to graph area to begin exploring.",
+      "khmer": "បន្ថែមវ៉ិចទ័រទៅក្នុងផ្ទៃក្រាបដើម្បីចាប់ផ្តើមរុករក។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.equationsScreen.screenButtonsHelpText": {
+      "english": "Explore and manipulate vector equations.",
+      "khmer": "រុករក និងរៀបចំសមីការវ៉ិចទ័រ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.equationsScreen.screenSummary.playArea": {
+      "english": "There is an open graph area showing vectors from the selected equation. Modify position, magnitude, direction, and scaling of these vectors, and explore how changes to the equation and coefficients affect vectors in graph area.",
+      "khmer": "មានផ្ទៃក្រាបបើកចំហមួយដែលបង្ហាញវ៉ិចទ័រពីសមីការដែលបានជ្រើសរើស។ កែប្រែទីតាំង ម៉ូឌុល ទិសដៅ និងមាត្រដ្ឋាននៃវ៉ិចទ័រទាំងនេះ ហើយរុករកមើលថាតើការផ្លាស់ប្តូរសមីការ និងមេគុណជះឥទ្ធិពលយ៉ាងណាដល់វ៉ិចទ័រនៅក្នុងផ្ទៃក្រាប។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.equationsScreen.screenSummary.controlArea": {
+      "english": "Choose equation determining how three vectors interrelate. Select coefficients for scaling vectors { $symbol1 } and { $symbol2 }. Turn on vector { $symbol3 }, values, angles, and grid, and components. Set components of base vectors, and choose to add them to graph area. Modify position of graph area origin. Switch between Cartesian and polar scenes, or reset entire screen.",
+      "khmer": "ជ្រើសរើសសមីការដែលកំណត់ពីទំនាក់ទំនងរវាងវ៉ិចទ័រទាំងបី។ ជ្រើសរើសមេគុណសម្រាប់ពង្រីក/បង្រួមវ៉ិចទ័រ { $symbol1 } និង { $symbol2 }។ បើកវ៉ិចទ័រ { $symbol3 } តម្លៃ មុំ ក្រឡាចត្រង្គ និងកំប៉ូសង់។ កំណត់កំប៉ូសង់នៃវ៉ិចទ័រគោល ហើយជ្រើសរើសដើម្បីបន្ថែមពួកវាទៅក្នុងផ្ទៃក្រាប។ កែប្រែទីតាំងគល់នៃផ្ទៃក្រាប។ ប្តូររវាងផ្ទាំងដេកាត និងផ្ទាំងប៉ូលែ ឬកំណត់ផ្ទាំងអេក្រង់ទាំងមូលឡើងវិញ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.equationsScreen.screenSummary.currentDetails": {
+      "english": "{ $equationType ->\n  [addition] Currently, equation is { $coefficient1 } times base vector { $symbol1 } plus { $coefficient2 } times base vector { $symbol2 } equals vector { $symbol3 }.\n  [subtraction] Currently, equation is { $coefficient1 } times base vector { $symbol1 } minus { $coefficient2 } times base vector { $symbol2 } equals vector { $symbol3 }.\n  *[negation] Currently, equation is { $coefficient1 } times base vector { $symbol1 } plus { $coefficient2 } times base vector { $symbol2 } plus vector { $symbol3 } equals zero.\n}",
+      "khmer": "{ $equationType ->\n  [addition] បច្ចុប្បន្ន សមីការគឺ { $coefficient1 } ដងនៃវ៉ិចទ័រគោល { $symbol1 } បូក { $coefficient2 } ដងនៃវ៉ិចទ័រគោល { $symbol2 } ស្មើនឹងវ៉ិចទ័រ { $symbol3 }។\n  [subtraction] បច្ចុប្បន្ន សមីការគឺ { $coefficient1 } ដងនៃវ៉ិចទ័រគោល { $symbol1 } ដក { $coefficient2 } ដងនៃវ៉ិចទ័រគោល { $symbol2 } ស្មើនឹងវ៉ិចទ័រ { $symbol3 }។\n  *[negation] បច្ចុប្បន្ន សមីការគឺ { $coefficient1 } ដងនៃវ៉ិចទ័រគោល { $symbol1 } បូក { $coefficient2 } ដងនៃវ៉ិចទ័រគោល { $symbol2 } បូកវ៉ិចទ័រ { $symbol3 } ស្មើនឹងសូន្យ។\n}",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.equationsScreen.screenSummary.interactionHint": {
+      "english": "Modify equation type and its coefficients to explore how changes in the equation affect vectors in graph area.",
+      "khmer": "កែប្រែប្រភេទសមីការ និងមេគុណរបស់វា ដើម្បីរុករកមើលថាតើការផ្លាស់ប្តូរនៅក្នុងសមីការជះឥទ្ធិពលយ៉ាងណាដល់វ៉ិចទ័រនៅក្នុងផ្ទៃក្រាប។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.accessibleHeadings.availableVectors": {
+      "english": "Available Vectors",
+      "khmer": "វ៉ិចទ័រដែលអាចប្រើបាន",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.accessibleHeadings.graphAreaHeading": {
+      "english": "Graph Area",
+      "khmer": "ផ្ទៃក្រាប",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.graphArea.accessibleParagraphExplore": {
+      "english": "{ $numberOfVectors } vectors in graph area.",
+      "khmer": "មានវ៉ិចទ័រចំនួន { $numberOfVectors } នៅក្នុងផ្ទៃក្រាប។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.graphArea.accessibleParagraphLab": {
+      "english": "{ $vectorSet1Size } vectors from set { $vectorSet1Symbol } and { $vectorSet2Size } vectors from set { $vectorSet2Symbol } in graph area.",
+      "khmer": "មានវ៉ិចទ័រចំនួន { $vectorSet1Size } ពីសំណុំ { $vectorSet1Symbol } និងវ៉ិចទ័រចំនួន { $vectorSet2Size } ពីសំណុំ { $vectorSet2Symbol } នៅក្នុងផ្ទៃក្រាប។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.graphArea.accessibleParagraphEquations": {
+      "english": "{ $numberOfVectors } vectors in graph area.",
+      "khmer": "មានវ៉ិចទ័រចំនួន { $numberOfVectors } នៅក្នុងផ្ទៃក្រាប។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.horizontalSceneName": {
+      "english": "Horizontal",
+      "khmer": "ផ្ដេក",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.verticalSceneName": {
+      "english": "Vertical",
+      "khmer": "បញ្ឈរ",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.cartesianSceneName": {
+      "english": "Cartesian",
+      "khmer": "ដេកាត",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.polarSceneName": {
+      "english": "Polar",
+      "khmer": "ប៉ូលែ",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.anglesCheckbox.accessibleName": {
+      "english": "Angles",
+      "khmer": "មុំ",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.anglesCheckbox.accessibleHelpText": {
+      "english": "Display vector angles in graph area.",
+      "khmer": "បង្ហាញមុំវ៉ិចទ័រនៅក្នុងផ្ទៃក្រាប។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.gridCheckbox.accessibleName": {
+      "english": "Grid",
+      "khmer": "ក្រឡាចត្រង្គ",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.gridCheckbox.accessibleHelpText": {
+      "english": "Explore with or without use of visual grid.",
+      "khmer": "រុករកដោយប្រើ ឬមិនប្រើក្រឡាចត្រង្គ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.sumCheckbox.accessibleName": {
+      "english": "Vector Sum, { $symbol }",
+      "khmer": "ផលបូកវ៉ិចទ័រ, { $symbol }",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.sumCheckbox.accessibleHelpText": {
+      "english": "Show or hide vector { $symbol }, if defined.",
+      "khmer": "បង្ហាញ ឬលាក់វ៉ិចទ័រ { $symbol } ប្រសិនបើបានកំណត់។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.sumCheckbox.accessibleContextResponseChecked": {
+      "english": "Vector { $symbol } visibility enabled.",
+      "khmer": "បានបើកការបង្ហាញវ៉ិចទ័រ { $symbol }។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.sumCheckbox.accessibleContextResponseUnchecked": {
+      "english": "Vector { $symbol } visibility disabled.",
+      "khmer": "បានបិទការបង្ហាញវ៉ិចទ័រ { $symbol }។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.labSumCheckbox.accessibleName": {
+      "english": "Vector Sum for Set { $vectorSetSymbol }, { $sumSymbol }",
+      "khmer": "ផលបូកវ៉ិចទ័រសម្រាប់សំណុំ { $vectorSetSymbol }, { $sumSymbol }",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.equationsSumCheckbox.accessibleName": {
+      "english": "Vector { $symbol }",
+      "khmer": "វ៉ិចទ័រ { $symbol }",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.valuesCheckbox.accessibleHelpText": {
+      "english": "Display vector and component magnitudes in graph area.",
+      "khmer": "បង្ហាញម៉ូឌុលវ៉ិចទ័រ និងកំប៉ូសង់នៅក្នុងផ្ទៃក្រាប។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.componentsRadioButtonGroup.accessibleName": {
+      "english": "Components Display Style",
+      "khmer": "រចនាប័ទ្មបង្ហាញកំប៉ូសង់",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.componentsRadioButtonGroup.accessibleHelpText": {
+      "english": "Choose whether and where to display vector x y components.",
+      "khmer": "ជ្រើសរើសថាតើត្រូវបង្ហាញ និងកន្លែងណាដែលត្រូវបង្ហាញកំប៉ូសង់ x y នៃវ៉ិចទ័រ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.invisibleRadioButton.accessibleName": {
+      "english": "Hidden",
+      "khmer": "លាក់",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.triangleRadioButton.accessibleName": {
+      "english": "Right triangle",
+      "khmer": "ត្រីកោណកែង",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.parallelogramRadioButton.accessibleName": {
+      "english": "From vector tail",
+      "khmer": "ចេញពីគល់វ៉ិចទ័រ",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.projectionRadioButton.accessibleName": {
+      "english": "Projected onto x y axes",
+      "khmer": "ចំណោលលើអ័ក្ស x y",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.cartesianPolarSceneRadioButtonGroup.accessibleName": {
+      "english": "Scene",
+      "khmer": "ផ្ទាំង",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.cartesianPolarSceneRadioButtonGroup.accessibleHelpText": {
+      "english": "Switch between independent scenes with their own vectors and graph areas. Cartesian scene vectors snap to integer x and y components. Polar scene vectors snap to integer magnitudes and angle multiples of { $polarAngleInterval } degrees.",
+      "khmer": "ប្តូររវាងផ្ទាំងឯករាជ្យដែលមានវ៉ិចទ័រ និងផ្ទៃក្រាបផ្ទាល់ខ្លួន។ វ៉ិចទ័រផ្ទាំងដេកាតតម្រង់ទៅតាមតម្លៃចំនួនគត់នៃកំប៉ូសង់ x និង y។ វ៉ិចទ័រផ្ទាំងប៉ូលែតម្រង់ទៅតាមតម្លៃចំនួនគត់នៃម៉ូឌុល និងពហុគុណនៃមុំ { $polarAngleInterval } ដឺក្រេ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.cartesianRadioButton.accessibleName": {
+      "english": "Cartesian scene",
+      "khmer": "ផ្ទាំងដេកាត",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.polarRadioButton.accessibleName": {
+      "english": "Polar scene",
+      "khmer": "ផ្ទាំងប៉ូលែ",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.horizontalVerticalSceneRadioButtonGroup.accessibleName": {
+      "english": "Scene",
+      "khmer": "ផ្ទាំង",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.horizontalVerticalSceneRadioButtonGroup.accessibleHelpText": {
+      "english": "Switch between independent scenes with their own vectors and graph areas.",
+      "khmer": "ប្តូររវាងផ្ទាំងឯករាជ្យដែលមានវ៉ិចទ័រ និងផ្ទៃក្រាបផ្ទាល់ខ្លួន។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.horizontalRadioButton.accessibleName": {
+      "english": "Horizontal scene",
+      "khmer": "ផ្ទាំងផ្ដេក",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.verticalRadioButton.accessibleName": {
+      "english": "Vertical scene",
+      "khmer": "ផ្ទាំងបញ្ឈរ",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.equationTypeRadioButtonGroup.accessibleName": {
+      "english": "Equation Type",
+      "khmer": "ប្រភេទសមីការ",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.equationTypeRadioButtonGroup.accessibleHelpText": {
+      "english": "Choose the equation that determines how vectors { $symbol1 }, { $symbol2 }, and { $symbol3 } interrelate.",
+      "khmer": "ជ្រើសរើសសមីការដែលកំណត់ពីទំនាក់ទំនងរវាងវ៉ិចទ័រ { $symbol1 }, { $symbol2 }, និង { $symbol3 }។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.additionRadioButton.accessibleName": {
+      "english": "{ $symbol1 } plus { $symbol2 } equals { $symbol3 }",
+      "khmer": "{ $symbol1 } បូក { $symbol2 } ស្មើនឹង { $symbol3 }",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.subtractionRadioButton.accessibleName": {
+      "english": "{ $symbol1 } minus { $symbol2 } equals { $symbol3 }",
+      "khmer": "{ $symbol1 } ដក { $symbol2 } ស្មើនឹង { $symbol3 }",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.negationRadioButton.accessibleName": {
+      "english": "{ $symbol1 } plus { $symbol2 } plus { $symbol3 } equals zero",
+      "khmer": "{ $symbol1 } បូក { $symbol2 } បូក { $symbol3 } ស្មើនឹងសូន្យ",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.baseVectorsCheckbox.accessibleName": {
+      "english": "Base Vectors",
+      "khmer": "វ៉ិចទ័រគោល",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.baseVectorsCheckbox.accessibleHelpText": {
+      "english": "Show or hide base vectors in graph area.",
+      "khmer": "បង្ហាញ ឬលាក់វ៉ិចទ័រគោលនៅក្នុងផ្ទៃក្រាប។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.originManipulator.accessibleName": {
+      "english": "Graph Area Origin",
+      "khmer": "គល់នៃផ្ទៃក្រាប",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.originManipulator.accessibleHelpText": {
+      "english": "Move to relocate graph area origin, which changes x axis and y axis spans.",
+      "khmer": "រំកិលដើម្បីប្តូរទីតាំងគល់នៃផ្ទៃក្រាប ដែលនឹងផ្លាស់ប្តូរប្រវែងលាតសន្ធឹងនៃអ័ក្ស x និងអ័ក្ស y។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.originManipulator.accessibleObjectResponse": {
+      "english": "x axis spans { $minX } to { $maxX }, y axis spans { $minY } to { $maxY }",
+      "khmer": "អ័ក្ស x លាតសន្ធឹងពី { $minX } ដល់ { $maxX }, អ័ក្ស y លាតសន្ធឹងពី { $minY } ដល់ { $maxY }",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.eraserButton.accessibleName": {
+      "english": "Erase all vectors",
+      "khmer": "លុបវ៉ិចទ័រទាំងអស់",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.eraserButton.accessibleHelpText": {
+      "english": "Remove all vectors from graph area.",
+      "khmer": "ដកវ៉ិចទ័រទាំងអស់ចេញពីផ្ទៃក្រាប។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.eraserButton.accessibleContextResponse": {
+      "english": "Graph area cleared",
+      "khmer": "បានសម្អាតផ្ទៃក្រាប",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.vectorValuesAccordionBox.accessibleParagraph": {
+      "english": "For vector { $symbol }: magnitude is { $magnitude }; direction is { $direction } degrees from positive x axis; x component is { $xComponent }; y component is { $yComponent }.",
+      "khmer": "សម្រាប់វ៉ិចទ័រ { $symbol }៖ ម៉ូឌុលគឺ { $magnitude }; ទិសដៅគឺ { $direction } ដឺក្រេពីអ័ក្ស x វិជ្ជមាន; កំប៉ូសង់ x គឺ { $xComponent }; កំប៉ូសង់ y គឺ { $yComponent }។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.vectorValuesAccordionBox.accessibleHelpTextCollapsed": {
+      "english": "Show magnitude, direction, and components of selected vector.",
+      "khmer": "បង្ហាញម៉ូឌុល ទិសដៅ និងកំប៉ូសង់នៃវ៉ិចទ័រដែលបានជ្រើសរើស។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.vectorValuesAccordionBox.accessibleParagraphBaseVector": {
+      "english": "For base vector { $symbol }: magnitude is { $magnitude }; direction is { $direction } degrees from positive x axis; x component is { $xComponent }; y component is { $yComponent }.",
+      "khmer": "សម្រាប់វ៉ិចទ័រគោល { $symbol }៖ ម៉ូឌុលគឺ { $magnitude }; ទិសដៅគឺ { $direction } ដឺក្រេពីអ័ក្ស x វិជ្ជមាន; កំប៉ូសង់ x គឺ { $xComponent }; កំប៉ូសង់ y គឺ { $yComponent }។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.vectorValuesAccordionBox.accessibleParagraphCoefficientVector": {
+      "english": "For vector { $coefficient } { $symbol }: magnitude is { $magnitude }; direction is { $direction } degrees from positive x axis; x component is { $xComponent }; y component is { $yComponent }.",
+      "khmer": "សម្រាប់វ៉ិចទ័រ { $coefficient } { $symbol }៖ ម៉ូឌុលគឺ { $magnitude }; ទិសដៅគឺ { $direction } ដឺក្រេពីអ័ក្ស x វិជ្ជមាន; កំប៉ូសង់ x គឺ { $xComponent }; កំប៉ូសង់ y គឺ { $yComponent }។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.equationAccordionBox.accessibleHelpTextCollapsed": {
+      "english": "Choose equation determining how three vectors interrelate, and adjust coefficients for scaled vectors.",
+      "khmer": "ជ្រើសរើសសមីការដែលកំណត់ពីទំនាក់ទំនងរវាងវ៉ិចទ័រទាំងបី និងកែតម្រូវមេគុណសម្រាប់វ៉ិចទ័រដែលត្រូវពង្រីក/បង្រួម។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.symbolSubSubscript": {
+      "english": "{ $symbol } sub { $subscript }",
+      "khmer": "{ $symbol } សន្ទស្សន៍ { $subscript }",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.signedRadioButton": {
+      "english": "signed, negative 180 to positive 180 degrees",
+      "khmer": "មានសញ្ញា ដក ១៨០ ដល់ បូក ១៨០ ដឺក្រេ",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.unsignedRadioButton": {
+      "english": "unsigned, 0 to 360 degrees",
+      "khmer": "គ្មានសញ្ញា ០ ដល់ ៣៦០ ដឺក្រេ",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.baseVectorXComponentPicker.accessibleName": {
+      "english": "Base vector { $symbol }, x component",
+      "khmer": "វ៉ិចទ័រគោល { $symbol }, កំប៉ូសង់ x",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.baseVectorXComponentPicker.accessibleHelpText": {
+      "english": "Choose horizontal component of base vector { $symbol }.",
+      "khmer": "ជ្រើសរើសកំប៉ូសង់ផ្ដេកនៃវ៉ិចទ័រគោល { $symbol }។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.baseVectorYComponentPicker.accessibleName": {
+      "english": "Base vector { $symbol }, y component",
+      "khmer": "វ៉ិចទ័រគោល { $symbol }, កំប៉ូសង់ y",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.baseVectorYComponentPicker.accessibleHelpText": {
+      "english": "Choose vertical component of base vector { $symbol }.",
+      "khmer": "ជ្រើសរើសកំប៉ូសង់ឈរនៃវ៉ិចទ័រគោល { $symbol }។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.baseVectorMagnitudePicker.accessibleName": {
+      "english": "Base vector { $symbol }, magnitude",
+      "khmer": "វ៉ិចទ័រគោល { $symbol }, ម៉ូឌុល",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.baseVectorMagnitudePicker.accessibleHelpText": {
+      "english": "Choose magnitude of base vector { $symbol }.",
+      "khmer": "ជ្រើសរើសម៉ូឌុលនៃវ៉ិចទ័រគោល { $symbol }។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.baseVectorAnglePicker.accessibleName": {
+      "english": "Base vector { $symbol }, direction",
+      "khmer": "វ៉ិចទ័រគោល { $symbol }, ទិសដៅ",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.baseVectorAnglePicker.accessibleHelpText": {
+      "english": "Choose direction of base vector { $symbol }, in degrees from positive x axis.",
+      "khmer": "ជ្រើសរើសទិសដៅនៃវ៉ិចទ័រគោល { $symbol } គិតជាដឺក្រេពីអ័ក្ស x វិជ្ជមាន។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.coefficientPicker.accessibleName": {
+      "english": "Vector { $symbol } Coefficient",
+      "khmer": "មេគុណវ៉ិចទ័រ { $symbol }",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.coefficientPicker.accessibleHelpText": {
+      "english": "Choose coefficient to multiply base vector in equation.",
+      "khmer": "ជ្រើសរើសមេគុណដើម្បីគុណនឹងវ៉ិចទ័រគោលក្នុងសមីការ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.vectorButton.accessibleName": {
+      "english": "Vector { $symbol }",
+      "khmer": "វ៉ិចទ័រ { $symbol }",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.vectorButton.accessibleHelpText": {
+      "english": "Add vector { $symbol } to graph area.",
+      "khmer": "បន្ថែមវ៉ិចទ័រ { $symbol } ទៅក្នុងផ្ទៃក្រាប។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.vectorSetButton.accessibleName": {
+      "english": "Vector Set { $symbol }",
+      "khmer": "សំណុំវ៉ិចទ័រ { $symbol }",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.vectorSetButton.accessibleHelpText": {
+      "english": "Add vector from set { $symbol } to graph area.",
+      "khmer": "បន្ថែមវ៉ិចទ័រពីសំណុំ { $symbol } ទៅក្នុងផ្ទៃក្រាប។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.vectorSetButton.accessibleHelpTextEmpty": {
+      "english": "Disabled when empty.",
+      "khmer": "មិនដំណើរការនៅពេលទទេ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged."
+    },
+    "a11y.vectorNode.body.accessibleName": {
+      "english": "Vector { $symbol }",
+      "khmer": "វ៉ិចទ័រ { $symbol }",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.vectorNode.body.accessibleHelpText": {
+      "english": "Move to change position of vector.",
+      "khmer": "រំកិលដើម្បីផ្លាស់ប្តូរទីតាំងវ៉ិចទ័រ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.vectorNode.body.accessibleObjectResponse": {
+      "english": "tail at { $tailX } { $tailY }, tip at { $tipX } { $tipY }",
+      "khmer": "គល់នៅ { $tailX } { $tailY }, ចុងនៅ { $tipX } { $tipY }",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.vectorNode.body.accessibleObjectResponseTipOutsideGraphArea": {
+      "english": "tail at { $tailX } { $tailY }, tip at { $tipX } { $tipY }, tip outside graph area",
+      "khmer": "គល់នៅ { $tailX } { $tailY }, ចុងនៅ { $tipX } { $tipY }, ចុងនៅក្រៅផ្ទៃក្រាប",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.vectorNode.tip.accessibleName": {
+      "english": "Vector { $symbol } tip",
+      "khmer": "ចុងវ៉ិចទ័រ { $symbol }",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.vectorNode.tip.accessibleHelpText": {
+      "english": "Move to change position of vector tip.",
+      "khmer": "រំកិលដើម្បីផ្លាស់ប្តូរទីតាំងចុងវ៉ិចទ័រ។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.vectorNode.tip.accessibleObjectResponse": {
+      "english": "{ $coordinateSnapMode ->\n  [cartesian] { $tipReturnedToGraphArea ->\n                [true] tip at { $tipX } { $tipY }, tip returned to graph area\n                *[false] tip at { $tipX } { $tipY }\n              }\n  *[polar] { $tipReturnedToGraphArea ->\n             [true] magnitude { $magnitude }, direction { $angle } degrees, tip returned to graph area\n             *[false] magnitude { $magnitude }, direction { $angle } degrees\n           }\n}",
+      "khmer": "{ $coordinateSnapMode ->\n  [cartesian] { $tipReturnedToGraphArea ->\n                [true] ចុងនៅ { $tipX } { $tipY }, ចុងបានត្រឡប់មកក្នុងផ្ទៃក្រាបវិញ\n                *[false] ចុងនៅ { $tipX } { $tipY }\n              }\n  *[polar] { $tipReturnedToGraphArea ->\n             [true] ម៉ូឌុល { $magnitude }, ទិសដៅ { $angle } ដឺក្រេ, ចុងបានត្រឡប់មកក្នុងផ្ទៃក្រាបវិញ\n             *[false] ម៉ូឌុល { $magnitude }, ទិសដៅ { $angle } ដឺក្រេ\n           }\n}",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.equationsVectorNode.accessibleName": {
+      "english": "{ $coefficient } { $symbol }",
+      "khmer": "{ $coefficient } { $symbol }",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.baseVectorNode.accessibleName": {
+      "english": "Base Vector { $symbol }",
+      "khmer": "វ៉ិចទ័រគោល { $symbol }",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.vectorAddedToGraphArea": {
+      "english": "Vector { $symbol } added to graph area.",
+      "khmer": "បានបន្ថែមវ៉ិចទ័រ { $symbol } ទៅក្នុងផ្ទៃក្រាប។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    },
+    "a11y.vectorRemovedFromGraphArea": {
+      "english": "Vector { $symbol } removed from graph area.",
+      "khmer": "បានដកវ៉ិចទ័រ { $symbol } ចេញពីផ្ទៃក្រាប។",
+      "category": "a11y",
+      "notes": "Screen-reader / accessible name or help text. Keep Fluent placeholders like { $symbol } / { $equationType -> ... } unchanged. (Hint: similar string already translated in vector-addition-equations review — optional reuse.)"
+    }
+  },
+  "shared_joist_chrome": {
+    "done": {
+      "english": "Done",
+      "khmer": "រួចរាល់",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.options": {
+      "english": "Options…",
+      "khmer": "ជម្រើស…",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.about": {
+      "english": "About…",
+      "khmer": "អំពី…",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.phetWebsite": {
+      "english": "PhET Website…",
+      "khmer": "គេហទំព័រ PhET…",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.reportAProblem": {
+      "english": "Report a Problem…",
+      "khmer": "រាយការណ៍បញ្ហា…",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.screenshot": {
+      "english": "Screenshot",
+      "khmer": "រូបថតអេក្រង់",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.fullscreen": {
+      "english": "Full Screen",
+      "khmer": "ពេញអេក្រង់",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.getUpdate": {
+      "english": "Check for Updates…",
+      "khmer": "ពិនិត្យមើលបច្ចុប្បន្នភាព…",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.enhancedSound": {
+      "english": "Extra Sound",
+      "khmer": "សំឡេងបន្ថែម",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "title.settings": {
+      "english": "Settings",
+      "khmer": "ការកំណត់",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "termsPrivacyAndLicensing": {
+      "english": "Terms, Privacy & Licensing",
+      "khmer": "លក្ខខណ្ឌ ឯកជនភាព និងអាជ្ញាបណ្ណ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "privacyPolicy": {
+      "english": "Privacy Policy",
+      "khmer": "គោលការណ៍ឯកជនភាព",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "donateToPhet": {
+      "english": "Donate to PhET",
+      "khmer": "បរិច្ចាគដល់ PhET",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "license.title": {
+      "english": "License",
+      "khmer": "អាជ្ញាបណ្ណ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.title": {
+      "english": "Credits",
+      "khmer": "ការទទួលស្គាល់ការចូលរួម",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.leadDesign": {
+      "english": "Lead Design: {0}",
+      "khmer": "អ្នកដឹកនាំការរចនា៖ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.softwareDevelopment": {
+      "english": "Software Development: {0}",
+      "khmer": "ការអភិវឌ្ឍកម្មវិធី៖ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.team": {
+      "english": "Team: {0}",
+      "khmer": "ក្រុមការងារ៖ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.contributors": {
+      "english": "Contributors: {0}",
+      "khmer": "អ្នករួមចំណែក៖ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.qualityAssurance": {
+      "english": "Quality Assurance: {0}",
+      "khmer": "ការធានាគុណភាព៖ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.graphicArts": {
+      "english": "Graphic Arts: {0}",
+      "khmer": "សិល្បៈក្រាហ្វិក៖ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.soundDesign": {
+      "english": "Sound Design: {0}",
+      "khmer": "ការរចនាសំឡេង៖ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.translation": {
+      "english": "Translation",
+      "khmer": "ការបកប្រែ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.thanks": {
+      "english": "Thanks",
+      "khmer": "ថ្លែងអំណរគុណ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "options.title": {
+      "english": "Options",
+      "khmer": "ជម្រើស",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "versionPattern": {
+      "english": "version {0}",
+      "khmer": "កំណែ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.upToDate": {
+      "english": "This simulation is up to date.",
+      "khmer": "ការពិសោធន៍ក្លែងធ្វើនេះគឺទាន់សម័យហើយ។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.outOfDate": {
+      "english": "New version available",
+      "khmer": "មានកំណែថ្មី",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.checking": {
+      "english": "Checking for updates…",
+      "khmer": "កំពុងពិនិត្យមើលបច្ចុប្បន្នភាព…",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.offline": {
+      "english": "Unable to check for updates.",
+      "khmer": "មិនអាចពិនិត្យមើលបច្ចុប្បន្នភាពបានទេ។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.newVersionAvailable": {
+      "english": "There is a new version available: {0}.",
+      "khmer": "មានកំណែថ្មីដែលអាចប្រើបាន៖ {0}។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.yourCurrentVersion": {
+      "english": "Your current version is: {0}.",
+      "khmer": "កំណែបច្ចុប្បន្នរបស់អ្នកគឺ៖ {0}។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.getUpdate": {
+      "english": "Get Update…",
+      "khmer": "ធ្វើបច្ចុប្បន្នភាព…",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.noThanks": {
+      "english": "No Thanks",
+      "khmer": "ទេ អរគុណ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "translation.credits.link": {
+      "english": "Translation Credits",
+      "khmer": "ការទទួលស្គាល់ការបកប្រែ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "thirdParty.credits.link": {
+      "english": "Third-party Credits",
+      "khmer": "ការទទួលស្គាល់ភាគីទីបី",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "keyboardShortcuts.title": {
+      "english": "Keyboard Shortcuts",
+      "khmer": "ផ្លូវកាត់ក្តារចុច",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "keyboardShortcuts.toGetStarted": {
+      "english": "to get started",
+      "khmer": "ដើម្បីចាប់ផ្តើម",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "simTitleWithScreenNamePattern": {
+      "english": "{{simName}} — {{screenName}}",
+      "khmer": "{{simName}} — {{screenName}}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "projectorMode": {
+      "english": "Projector Mode",
+      "khmer": "របៀបម៉ាស៊ីនបញ្ចាំង",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.title": {
+      "english": "Preferences",
+      "khmer": "ចំណង់ចំណូលចិត្ត",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.general.title": {
+      "english": "General",
+      "khmer": "ទូទៅ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.overview.title": {
+      "english": "Overview",
+      "khmer": "ទិដ្ឋភាពទូទៅ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.simulation.title": {
+      "english": "Simulation",
+      "khmer": "ការពិសោធន៍ក្លែងធ្វើ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.visual.title": {
+      "english": "Visual",
+      "khmer": "រូបភាព/គំហើញ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.visual.interactiveHighlights": {
+      "english": "Interactive Highlights",
+      "khmer": "ការរំលេចពណ៌នៅពេលអន្តរកម្ម",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.visual.interactiveHighlightsDescription": {
+      "english": "Add visual highlights for mouse and touch as you interact.",
+      "khmer": "បន្ថែមការរំលេចពណ៌សម្រាប់កណ្ដុរ និងការប៉ះបញ្ជា នៅពេលអ្នកធ្វើអន្តរកម្ម។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.visual.projectorModeDescription": {
+      "english": "Increase color contrast for better visibility in classrooms.",
+      "khmer": "បង្កើនកម្រិតច្បាស់នៃពណ៌សម្រាប់ភាពងាយមើលឃើញកាន់តែច្បាស់ក្នុងថ្នាក់រៀន។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.audio.title": {
+      "english": "Audio",
+      "khmer": "សំឡេង",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.audio.sounds.title": {
+      "english": "Sounds",
+      "khmer": "សំឡេង",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.audio.sounds.extraSounds.title": {
+      "english": "Extra Sounds",
+      "khmer": "សំឡេងបន្ថែម",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.audio.audioFeatures.title": {
+      "english": "Audio Features",
+      "khmer": "មុខងារសំឡេង",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.audio.sounds.description": {
+      "english": "Play sonifications and sound effects as you interact.",
+      "khmer": "ចាក់សំឡេងតំណាងទិន្នន័យ និងសំឡេងបែបផែននៅពេលអ្នកធ្វើអន្តរកម្ម។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.audio.sounds.extraSounds.description": {
+      "english": "Play additional sound that may be helpful for some learners.",
+      "khmer": "ចាក់សំឡេងបន្ថែមដែលអាចមានប្រយោជន៍សម្រាប់អ្នកសិក្សាមួយចំនួន។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.input.title": {
+      "english": "Input",
+      "khmer": "ការបញ្ចូល",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.localization.title": {
+      "english": "Localization",
+      "khmer": "ការធ្វើមូលដ្ឋានីយកម្ម",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.localization.languageSelection.title": {
+      "english": "Languages",
+      "khmer": "ភាសា",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.localization.languageSelection.description": {
+      "english": "Change language to translate on-screen text. Additional descriptions, when present, remain in English.",
+      "khmer": "ផ្លាស់ប្តូរភាសាដើម្បីបកប្រែអត្ថបទលើអេក្រង់។ ការពិពណ៌នាបន្ថែម (ប្រសិនបើមាន) នឹងនៅតែជាភាសាអង់គ្លេស។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.general.accessibilityIntro": {
+      "english": "We are adding features to our simulations to make them more inclusive. Some of these features support accessibility for learners with diverse needs and within diverse environments. Explore this menu to review or change the default presentation settings.",
+      "khmer": "យើងកំពុងអភិវឌ្ឍមុខងារបន្ថែមក្នុងការពិសោធន៍ ដើម្បីឱ្យអ្នកសិក្សាទាំងអស់អាចចូលរៀនបានកាន់តែងាយស្រួល។ មុខងារមួយចំនួនជួយគាំទ្រដល់ការប្រើប្រាស់របស់អ្នករៀនដែលមានតម្រូវការពិសេស និងស្ថិតក្នុងស្ថានភាពសិក្សាផ្សេងៗគ្នា។ អ្នកអាចចូលទៅកាន់ម៉ឺនុយនេះ ដើម្បីពិនិត្យ ឬកែសម្រួលការកំណត់បង្ហាញទូទៅតាមការចង់បាន។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.general.moreAccessibility": {
+      "english": "Look for Inclusive Features on the Simulations Filter page of the PhET website to find all simulations with available features.",
+      "khmer": "សូមចូលទៅកាន់ទំព័រតម្រង (Filter) លើគេហទំព័រ PhET រួចជ្រើសរើស \"មុខងារបរិយាបន្ន\" ដើម្បីស្វែងរកការពិសោធន៍ទាំងអស់ដែលមានមុខងារជំនួយទាំងនេះ។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-line-operations — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    }
+  },
+  "shared_scenery_phet_chrome": {
+    "keyboardHelpDialog.generalNavigation": {
+      "english": "General Navigation",
+      "khmer": "ការរុករកទូទៅ",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-line-operations — review and edit if needed."
+    },
+    "keyboardHelpDialog.basicActions": {
+      "english": "Basic Actions",
+      "khmer": "សកម្មភាពមូលដ្ឋាន",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-line-operations — review and edit if needed."
+    },
+    "keyboardHelpDialog.moveToNextItem": {
+      "english": "Move to next item",
+      "khmer": "រំកិលទៅធាតុបន្ទាប់",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-line-operations — review and edit if needed."
+    },
+    "keyboardHelpDialog.moveToPreviousItem": {
+      "english": "Move to previous item",
+      "khmer": "រំកិលទៅធាតុមុន",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-line-operations — review and edit if needed."
+    },
+    "keyboardHelpDialog.pressButtons": {
+      "english": "Press buttons",
+      "khmer": "ចុចប៊ូតុង",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-line-operations — review and edit if needed."
+    },
+    "keyboardHelpDialog.resetAll": {
+      "english": "Reset All",
+      "khmer": "កំណត់ឡើងវិញទាំងអស់",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-line-operations — review and edit if needed."
+    },
+    "keyboardHelpDialog.exitADialog": {
+      "english": "Exit a dialog",
+      "khmer": "ចាកចេញពីផ្ទាំងប្រអប់",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-line-operations — review and edit if needed."
+    },
+    "keyboardHelpDialog.toggleCheckboxes": {
+      "english": "Toggle checkboxes",
+      "khmer": "បិទ/បើកប្រអប់ធីក",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-line-operations — review and edit if needed."
+    },
+    "keyboardHelpDialog.or": {
+      "english": "or",
+      "khmer": "ឬ",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-line-operations — review and edit if needed."
+    },
+    "keyboardHelpDialog.hyphen": {
+      "english": "-",
+      "khmer": "-",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-line-operations — review and edit if needed."
+    },
+    "keyboardHelpDialog.moveDraggableItems": {
+      "english": "Move Draggable Items",
+      "khmer": "រំកិលធាតុដែលអាចអូសបាន",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-line-operations — review and edit if needed."
+    },
+    "keyboardHelpDialog.move": {
+      "english": "Move",
+      "khmer": "រំកិល",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-line-operations — review and edit if needed."
+    },
+    "keyboardHelpDialog.moveSlower": {
+      "english": "Move slower",
+      "khmer": "រំកិលឱ្យយឺតជាងមុន",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-line-operations — review and edit if needed."
+    },
+    "ResetAllButton.name": {
+      "english": "Reset All",
+      "khmer": "កំណត់ឡើងវិញទាំងអស់",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-line-operations — review and edit if needed."
+    },
+    "SoundToggleButton.name": {
+      "english": "Toggle Sound",
+      "khmer": "បិទ/បើកសំឡេង",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-line-operations — review and edit if needed."
+    }
+  }
+}
